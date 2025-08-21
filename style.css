@@ -30,6 +30,7 @@ header {
     z-index: 100;
 }
 
+/* scrolled es una clase de JavaScript */
 header.scrolled {
     background-color: #4a7c5991;
     filter: brightness(1);
