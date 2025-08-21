@@ -402,10 +402,9 @@ footer {
         display: block;
     }
 
-    .menu-nav {
+    .menu-nav.show {
         display: none;
         position: relative;
-                
     }
 
     .menu-nav > ul {

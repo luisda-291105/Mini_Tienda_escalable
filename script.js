@@ -1,12 +1,19 @@
 const btn = document.getElementById("btn-toggle-menu");
 const menu = document.getElementById("menu-nav");
 
-if (window.innerWidth <= 768){
-btn.addEventListener("click", () => {
-    if (menu.style.display=== "none") {
-        menu.style.display = "block";
-    }else {
-        menu.style.display= "none"
-    }
-})
+function toggleMenu() {
+    menu.classList.toggle("show");
 }
+
+function handleResize() {
+    if (window.innerWidth <= 768) {
+        btn.addEventListener("click", toggleMenu );
+    }else {
+        menu.classList.remove("show");
+        btn.removeEventListener("click", toggleMenu);
+    }
+}
+
+handleResize();
+
+window.addEventListener("resize" , handleResize);
