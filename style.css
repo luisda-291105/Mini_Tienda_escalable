@@ -12,6 +12,10 @@ body {
     line-height: 1.6;
 }
 
+main {
+    margin-top: 5.3em;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -28,6 +32,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 100;
+    top: 0;
 }
 
 /* scrolled es una clase de JavaScript */
